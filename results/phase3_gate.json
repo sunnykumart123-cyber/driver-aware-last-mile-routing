@@ -1,0 +1,36 @@
+{
+  "phase": 3,
+  "metro_held_out": "Austin",
+  "split": "val",
+  "n_routes": 60,
+  "erp_available": true,
+  "erp": {
+    "n": 60,
+    "mean": 0.07682361620248493,
+    "std": 0.04922585879249505,
+    "min": 0.008924221112220052,
+    "p25": 0.047820876153713686,
+    "median": 0.06686454027070679,
+    "p75": 0.0928232794128861,
+    "max": 0.29812324023150466,
+    "n_zero": 0,
+    "frac_zero": 0.0
+  },
+  "seq_dev": {
+    "n": 60,
+    "mean": 0.3057387550167267,
+    "std": 0.13621878786688538,
+    "min": 0.03502222222222222,
+    "p25": 0.22942125140577363,
+    "median": 0.3174011479591837,
+    "p75": 0.4175483559025667,
+    "max": 0.4943181818181818,
+    "n_zero": 0,
+    "frac_zero": 0.0
+  },
+  "warnings": [],
+  "reference": null,
+  "reference_source": null,
+  "tolerance": 0.005,
+  "verdict": "no reference supplied: pass --reference and --reference-source from the paper being reproduced. The gate cannot be closed without it."
+}

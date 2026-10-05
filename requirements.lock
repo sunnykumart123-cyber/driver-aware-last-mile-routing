@@ -1,0 +1,23 @@
+# Exact versions the test suite was last green against (Python 3.13, win32,
+# 2026-10-01).  Phase-1's definition of done is "environment reproducible from a
+# lockfile"; this is that file.
+#
+#   pip install -r requirements.lock
+#
+# torch is CPU-only here.  For a GPU box install torch from the index that
+# matches your CUDA version *first*, then run this file with --no-deps for the
+# remaining pins.
+
+numpy==2.4.6
+pandas==3.0.5
+scipy==1.18.0
+scikit-learn==1.9.0
+pyarrow==24.0.0
+lightgbm==4.7.0
+torch==2.13.0
+pulp==2.9.0
+matplotlib==3.11.1
+pytest==9.1.1
+
+# Present in the dev environment, not imported by any load-bearing module:
+xgboost==3.4.0

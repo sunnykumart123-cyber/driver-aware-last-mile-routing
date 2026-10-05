@@ -1,0 +1,22 @@
+# Runtime dependencies.  See requirements.lock for the exact versions this
+# repository has been tested against.
+
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.3
+pyarrow>=14.0          # parquet IO for processed instances and the result log
+lightgbm>=4.0          # Stage-1a GBM, Stage-1b quantile heads
+torch>=2.1             # Stage-1a pointer network
+pulp>=2.7,<3           # open-source MILP backend (CBC).  PuLP 4 is a rewritten,
+                       # incompatible API: LpVariable.dicts and PULP_CBC_CMD are
+                       # gone, so the pin is deliberate, not laziness.
+matplotlib>=3.7        # reliability diagrams and result plots
+
+# Optional, imported lazily and degraded gracefully if absent:
+#   gurobipy   -- preferred exact backend (licence required)
+#   xgboost    -- drop-in alternative to lightgbm for the transition scorer
+#   ngboost    -- alternative Stage-1b distributional regressor
+
+# Development
+pytest>=7.4

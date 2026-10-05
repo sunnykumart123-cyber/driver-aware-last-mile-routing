@@ -1,0 +1,94 @@
+{
+  "n_routes": 1500,
+  "metros": {
+    "Los Angeles": 525,
+    "Chicago": 468,
+    "Boston": 413,
+    "Austin": 94
+  },
+  "quality": {
+    "Medium": 845,
+    "High": 632,
+    "Low": 23
+  },
+  "n_stops": {
+    "mean": 151.038,
+    "median": 156.0,
+    "min": 33.0,
+    "max": 222.0,
+    "p90": 189.0
+  },
+  "n_zones": {
+    "mean": 21.619333333333334,
+    "median": 21.0,
+    "min": 7.0,
+    "max": 46.0,
+    "p90": 28.0
+  },
+  "n_windows": {
+    "mean": 10.170666666666667,
+    "median": 9.0,
+    "min": 1.0,
+    "max": 45.0,
+    "p90": 21.0
+  },
+  "window_frac": {
+    "mean": 0.0727441287516518,
+    "median": 0.05926628010704728,
+    "min": 0.004878048780487805,
+    "max": 0.3953488372093023,
+    "p90": 0.1533794162826423
+  },
+  "service_total_min": {
+    "mean": 264.57143666666667,
+    "median": 262.00333333333333,
+    "min": 130.12333333333333,
+    "max": 452.83833333333337,
+    "p90": 331.9061666666667
+  },
+  "tt_median_min": {
+    "mean": 5.915477777777778,
+    "median": 5.635000000000001,
+    "min": 1.985,
+    "max": 13.064166666666665,
+    "p90": 8.26125
+  },
+  "tt_asymmetry": {
+    "mean": 0.532611504897185,
+    "median": 0.4679103029690026,
+    "min": 0.1822913983111493,
+    "max": 2.987317946032221,
+    "p90": 0.8242718458445722
+  },
+  "zone_precedence": {
+    "n_with_sigma_star": 1500,
+    "sigma_contiguous_count": 575,
+    "sigma_contiguous_frac": 0.38333333333333336,
+    "extra_zone_blocks": {
+      "mean": 2.334,
+      "median": 1.0,
+      "min": 0.0,
+      "max": 38.0,
+      "p90": 6.0
+    },
+    "interpretation": "The zone-precedence constraint of \u00a73 forbids re-entering a sort zone. Where sigma* is not contiguous, that constraint excludes the driver's own sequence from the feasible set, so the attainable ERP has a floor above zero by construction.",
+    "by_metro": {
+      "Austin": {
+        "contiguous_frac": 0.39361702127659576,
+        "n": 94
+      },
+      "Boston": {
+        "contiguous_frac": 0.32929782082324455,
+        "n": 413
+      },
+      "Chicago": {
+        "contiguous_frac": 0.41025641025641024,
+        "n": 468
+      },
+      "Los Angeles": {
+        "contiguous_frac": 0.4,
+        "n": 525
+      }
+    }
+  }
+}

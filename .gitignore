@@ -1,0 +1,29 @@
+# The LMRRC download is ~20 GB and is public: fetch it, never commit it.
+data/raw/**
+!data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+
+# Artefacts and results
+results/artifacts/**
+results/*.parquet
+results/*.png
+results/*.csv
+!results/.gitkeep
+
+# The official scorer is vendored per-machine, not redistributed
+external/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Vendored third-party scoring module (fetched per machine, not redistributed)
+external/amzn_scoring/

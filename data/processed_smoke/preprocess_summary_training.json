@@ -1,0 +1,15 @@
+{
+  "split": "training",
+  "routes": 25,
+  "with_actual_sequence": 25,
+  "per_metro": {
+    "Los Angeles": 11,
+    "Seattle": 4,
+    "Chicago": 4,
+    "Boston": 5,
+    "Austin": 1
+  },
+  "stops_mean": 142.88,
+  "stops_min": 59,
+  "stops_max": 190
+}

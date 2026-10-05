@@ -1,0 +1,65 @@
+{
+  "held_out_metro": "Austin",
+  "artifact": "C:\\Users\\Admin\\AppData\\Roaming\\Claude\\scratch-workspaces\\f71eb4b2-75bf-43d0-bf23-f47a8f7c946f\\77877f05-9c51-47a0-9f70-bd2b04eece3c\\scratch-2026-09-30-8763fc\\mtp-driver-reliability\\results\\artifacts\\quantile_model_ho_austin.pkl",
+  "quantiles": [
+    0.05,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+  ],
+  "sharpness": {
+    "train": {
+      "travel": {
+        "median_iqr_min": 0.43993340025546723,
+        "median_full_range_min": 1.095477224725458,
+        "median_center_min": 0.6608455469183189
+      },
+      "service": {
+        "median_iqr_min": 0.9028771910920471,
+        "median_full_range_min": 3.1743217582699232,
+        "median_center_min": 1.2330290761163742
+      }
+    },
+    "validation": {
+      "travel": {
+        "median_iqr_min": 0.3947216256643591,
+        "median_full_range_min": 0.9502728523006891,
+        "median_center_min": 0.6813570971826393
+      },
+      "service": {
+        "median_iqr_min": 0.9093946795210932,
+        "median_full_range_min": 3.1981856290805206,
+        "median_center_min": 1.2324436488224781
+      }
+    },
+    "held_out_metro": {
+      "travel": {
+        "median_iqr_min": 0.3568337712940615,
+        "median_full_range_min": 0.8768733227691617,
+        "median_center_min": 0.6896661931107813
+      },
+      "service": {
+        "median_iqr_min": 0.9345736666163017,
+        "median_full_range_min": 3.2664538818243325,
+        "median_center_min": 1.2241918076482357
+      }
+    }
+  },
+  "max_abs_coverage_error": 0.20441336723574277,
+  "worst_cell": {
+    "head": "travel",
+    "split": "held_out_metro",
+    "quantile": 0.95,
+    "empirical_coverage": 0.7455866327642572,
+    "pinball_loss": 0.36377332337010415,
+    "mean_prediction": 1.5105259910320334,
+    "mean_target": 1.2207567502118901,
+    "n": 13765.0,
+    "coverage_error": -0.20441336723574277
+  },
+  "mean_pinball_by_head": {
+    "service": 0.3103924568124029,
+    "travel": 0.1917577872173679
+  }
+}
